@@ -115,6 +115,9 @@ export default class AxesUtils {
 
     if (w.config.xaxis.labels.hideOverlappingLabels && drawnLabels.length > 0) {
       const prev = drawnLabelsRects[drawnLabelsRects.length - 1]
+      
+      console.log('Dom waz ere')
+
       if (
         label.x <
         (prev.textRect.width + 32) /
