@@ -117,7 +117,7 @@ export default class AxesUtils {
       const prev = drawnLabelsRects[drawnLabelsRects.length - 1]
       if (
         label.x <
-        prev.textRect.width /
+        (prev.textRect.width + 32) /
           (w.globals.rotateXLabels
             ? Math.abs(w.config.xaxis.labels.rotate) / 12
             : 1.01) +
